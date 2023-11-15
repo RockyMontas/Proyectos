@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Contenedor principal Body*/
+        body{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        header{
+            background-color: aqua;
+            color: black;
+            padding: 10px;
+            text-align: center;
+        }
+        .menu{
+            background-color: black;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+        .menu ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+        }
+        .menu ul li{
+            display: inline;
+            margin: 10px;
+            font-size: 20px;
+        }
+        .menu a{
+            color: white;
+            text-decoration: none;
+        }
+        menu:hover{
+            background-color: #f03476;
+        }
+        #subTitulo{
+            color: #4caf50;
+            text-align: center;
+        }
+        #parrafo-subTitulo{
+            text-align: center;
+        }
+        .content-container{
+            display: flex;
+            flex: 1;
+        }
+        main{
+            flex: 2;
+            padding: 20px;
+            transition: background-color 0.3s;
+        }
+        main:hover{
+            background-color: #f03476;
+        }
+        aside{
+            flex: 1;
+            background-color: #f8f8f8;
+            padding: 10px;
+            transition: background-color 0.3s
+        }
+        aside:hover{
+            background-color: blue;
+        }
+        section{
+            border: 1px solid #ddd;
+            padding: 15px;
+            transition: background-color 0.3s
+        }
+        section:hover{
+            border-color: #999;
+        }
+        article{
+            border: 1px solid #ddd;
+            padding: 10px;
+            transition: background-color 0.3s
+        }
+        article:hover{
+            border-color: #152;
+        }
+        footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            transition: background-color 0.3s
+        }
+        footer:hover{
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Titulo Camil</h1>
+    </header>
+    <!-- Nav -->
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+    </nav>
+
+    <h2 id="subTitulo">Sub titulo</h2>
+    <p id="parrafo-subTitulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quod voluptas nisi.</p>
+    <!-- Content Container (Main and Aside) -->
+    <div class="content-container">
+        <!-- Main Content -->
+        <main>
+            <section>
+                <article>
+                    <h3>Titulo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci sequi ipsam excepturi blanditiis laborum corrupti laboriosam, neque esse, accusantium nihil quis! Magnam natus voluptatem provident laborum hic vitae mollitia. Omnis!</p>
+                </article>
+
+                <article>
+                    <h3>Titulo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci sequi ipsam excepturi blanditiis laborum corrupti laboriosam, neque esse, accusantium nihil quis! Magnam natus voluptatem provident laborum hic vitae mollitia. Omnis!</p>
+                </article>
+            </section>
+        </main>
+
+        <!-- Aside Content -->
+        <aside>
+            <article>
+                <h3>Otro titulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quod voluptas nisi.</p>
+            </article>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Informacion de pie de pagina: Derecho de autor, pais, enlace interes</p>
+    </footer>
+</body>
+</html>
